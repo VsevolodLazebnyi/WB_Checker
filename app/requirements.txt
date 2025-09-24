@@ -1,0 +1,9 @@
+# wb_checker/app/requirements.txt
+tk
+pandas
+openpyxl
+selenium
+webdriver-manager
+vaderSentiment
+scikit-learn
+numpy
