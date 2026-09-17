@@ -16,6 +16,7 @@ with open(vectorizer_path, "rb") as vec_file:
 
 def process_reviews(input_file, output_dir):
     df = pd.read_excel(input_file)
+    # Input files must keep these columns so both models receive the expected review data.
     required_columns = ["Текст", "Рейтинг", "Фото"]
     if not all(column in df.columns for column in required_columns):
         raise ValueError(f"Данные должны содержать столбцы {required_columns}.")
